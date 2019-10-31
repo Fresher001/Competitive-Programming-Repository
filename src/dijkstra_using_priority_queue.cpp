@@ -3,6 +3,11 @@
  * Usage: dijkstra O((V + E) lg(V))
  * Source: https://github.com/dragonslayerx
  */
+
+// We mark the distance of src 0 initially nad all other verticies as infinity. When we pop element from queue we check if we can make 
+// distance less than the current distance. 
+// If finally distance of some node if infinity that means it is not reachable from source.
+
 const int MAX = 100050;
 const int INF = 1e9;
 
